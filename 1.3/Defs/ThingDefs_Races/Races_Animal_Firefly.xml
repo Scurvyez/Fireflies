@@ -8,7 +8,8 @@
         <defName>FF_Firefly</defName>
         <label>firefly</label>
         <description>Fireflies are soft-bodied beetles with the power of flight and bioluminescence. They live incredibly short, yet vibrant, lives among the scattered planets of The Rim.\n\nThey are often found in small to large groups and are non-threatening.</description>
-        <statBases>
+        <thingClass>Fireflies.Firefly</thingClass>
+		<statBases>
             <MoveSpeed>8.0</MoveSpeed>
             <MarketValue>50</MarketValue>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -21,6 +22,33 @@
             <li Class="AnimalBehaviours.CompProperties_Floating">
       
             </li>
+			<li Class="Fireflies.CompProperties_Firefly">
+				<glowGraphicData>
+					<texPath>Things/Pawn/Animal/Firefly/Base/Glow</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>MoteGlow</shaderType>
+				</glowGraphicData>
+				<shortBlinkDuration>8</shortBlinkDuration>
+				<blinkIntervalRange>50~200</blinkIntervalRange>
+				<blinkDuration>250~750</blinkDuration>
+				<chanceToStayOn>0.25</chanceToStayOn>
+				<xMoveDuration>100</xMoveDuration>
+				<yMoveDuration>250</yMoveDuration>
+				<xPoints>
+					<li>(0,   -0.1)</li>
+					<li>(0.25, 0)</li>
+					<li>(0.5,  0.1)</li>
+					<li>(0.75, 0)</li>
+					<li>(1,   -0.1)</li>
+				</xPoints>
+				<yPoints>
+					<li>(0,   -0.5)</li>
+					<li>(0.25, 0)</li>
+					<li>(0.5,  0.5)</li>
+					<li>(0.75, 0)</li>
+					<li>(1,   -0.5)</li>
+				</yPoints>
+			</li>
         </comps>
 
         <race>
@@ -124,14 +152,11 @@
 		</wildGroupSize>
 
         <lifeStages>
-
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
-                    <drawSize>0.05</drawSize>
-                    <shaderType>
-                        <li>TransparentPostLight</li>
-                    </shaderType>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+                    <shaderType>Transparent</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
@@ -141,25 +166,20 @@
 
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
-                    <drawSize>0.08</drawSize>
-                    <shaderType>
-                        <li>TransparentPostLight</li>
-                    </shaderType>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+					<shaderType>Transparent</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
                     <drawSize>0.08</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
-
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
-                    <drawSize>1.00</drawSize>
-                    <shaderType>
-                        <li>TransparentPostLight</li>
-                    </shaderType>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+					<shaderType>Transparent</shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
