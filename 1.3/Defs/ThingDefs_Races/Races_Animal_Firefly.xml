@@ -9,6 +9,7 @@
         <label>firefly</label>
         <description>Fireflies are soft-bodied beetles with the power of flight and bioluminescence. They live incredibly short, yet vibrant, lives among the scattered planets of The Rim.\n\nThey are often found in small to large groups and are non-threatening.</description>
         <thingClass>Fireflies.Firefly</thingClass>
+
 		<statBases>
             <MoveSpeed>8.0</MoveSpeed>
             <MarketValue>50</MarketValue>
@@ -18,10 +19,21 @@
             <Flammability>0.0</Flammability>
         </statBases>
 
-        <comps>		
+        <comps>
+
             <li Class="AnimalBehaviours.CompProperties_Floating">
       
             </li>
+
+            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+                <resourceAmount>1</resourceAmount>
+                <dropChance>0.85</dropChance>
+                <isRandom>true</isRandom>
+                <randomItems>
+                    <li>FF_Firefly_Essence</li>
+                </randomItems>
+            </li>
+
 			<li Class="Fireflies.CompProperties_Firefly">
 				<glowGraphicData>
 					<texPath>Things/Pawn/Animal/Firefly/Base/Glow</texPath>
@@ -49,9 +61,11 @@
 					<li>(1,   -0.5)</li>
 				</yPoints>
 			</li>
+
         </comps>
 
         <race>
+
             <wildBiomes>
                 <IceSheet>0.10</IceSheet>
 				<SeaIce>0.10</SeaIce>
@@ -65,6 +79,7 @@
 				<TropicalSwamp>0.10</TropicalSwamp>
 				<AridShrubland>0.10</AridShrubland>
 			</wildBiomes>
+
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.05</baseBodySize>
@@ -75,9 +90,10 @@
             <canBePredatorPrey>false</canBePredatorPrey>
             <trainability>None</trainability>
             <nameOnTameChance>0.01</nameOnTameChance>
-            <mateMtbHours>150</mateMtbHours>
-            <gestationPeriodDays>18</gestationPeriodDays>
+            <mateMtbHours>100</mateMtbHours>
+            <gestationPeriodDays>5</gestationPeriodDays>
             <lifeExpectancy>0.12</lifeExpectancy>
+
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
@@ -86,6 +102,7 @@
                     <li>(4.0, 0)</li>
                 </points>
             </litterSizeCurve>
+
             <lifeStageAges>
                 <li>
                     <def>AnimalBaby</def>
@@ -98,15 +115,19 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.05</minAge>
-                    <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+                    <!-- <soundWounded>Pawn_Spelopede_Pain</soundWounded>
                     <soundDeath>Pawn_Spelopede_Death</soundDeath>
                     <soundCall>Pawn_Spelopede_Call</soundCall>
-                    <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+                    <soundAngry>Pawn_Spelopede_Angry</soundAngry> -->
                 </li>
             </lifeStageAges>
+
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+
+            <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
+
         </race>
 
         <tradeTags>
@@ -118,14 +139,17 @@
                 <statToAdd>
 					<li>FF_PrimaryRole</li>
 					<li>FF_SecondaryRole</li>
+                    <li>FF_FunFacts</li>
 				</statToAdd>
 				<statValues>
 					<li>FF_Glower</li>
 					<li>FF_Floater</li>
+                    <li>FF_FunFact_1</li>
 				</statValues>
 				<statDescriptions>
 					<li>FF_GlowerDesc</li>
 					<li>FF_FloaterDesc</li>
+                    <li>FF_FunFact_1Desc</li>
 				</statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/FF_FireflyArt</ImageToShowInInfoCard>
@@ -148,10 +172,11 @@
 
         <wildGroupSize>
 			<min>1</min>
-			<max>25</max>
+			<max>50</max>
 		</wildGroupSize>
 
         <lifeStages>
+
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
