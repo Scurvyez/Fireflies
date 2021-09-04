@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    
+    <!-- Animal Stats -->
+	
+	<FF_PrimaryRole>Primary Role</FF_PrimaryRole>
+	<FF_SecondaryRole>Secondary Role</FF_SecondaryRole>
+
+    <!-- Roles -->
+
+    <FF_Floater>Floater</FF_Floater>
+    <FF_Glower>Glower</FF_Glower>
+
+    <!-- Role Descriptions -->
+	
+	<FF_FloaterDesc>This animal floats above the ground, ignoring all movement penalties.</FF_FloaterDesc>
+    <FF_GlowerDesc>This animal glows like a small sun.</FF_GlowerDesc>
+
+</LanguageData>

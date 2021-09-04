@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Firefly ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+
+        <defName>FF_Firefly</defName>
+        <label>firefly</label>
+        <description>Fireflies are soft-bodied beetles with the power of flight and bioluminescence. They live incredibly short, yet vibrant, lives among the scattered planets of The Rim.\n\nThey are often found in small to large groups and are non-threatening.</description>
+        <statBases>
+            <MoveSpeed>8.0</MoveSpeed>
+            <MarketValue>50</MarketValue>
+            <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+            <ComfyTemperatureMax>100</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+            <Flammability>0.0</Flammability>
+        </statBases>
+
+        <comps>		
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+      
+            </li>
+        </comps>
+
+        <race>
+            <wildBiomes>
+                <IceSheet>0.10</IceSheet>
+				<SeaIce>0.10</SeaIce>
+                <ColdBog>0.10</ColdBog>
+				<Desert>0.10</Desert>
+                <BorealForest>0.30</BorealForest>
+                <Tundra>0.10</Tundra> 
+				<TemperateForest>0.10</TemperateForest>
+				<TemperateSwamp>0.10</TemperateSwamp>
+				<TropicalRainforest>0.10</TropicalRainforest>
+				<TropicalSwamp>0.10</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+			</wildBiomes>
+            <body>FF_FireflyBody</body>
+            <herdAnimal>true</herdAnimal>
+            <baseBodySize>0.05</baseBodySize>
+            <baseHealthScale>1.0</baseHealthScale>
+            <baseHungerRate>0.01</baseHungerRate>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <wildness>0.99</wildness>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <trainability>None</trainability>
+            <nameOnTameChance>0.01</nameOnTameChance>
+            <mateMtbHours>150</mateMtbHours>
+            <gestationPeriodDays>18</gestationPeriodDays>
+            <lifeExpectancy>0.12</lifeExpectancy>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.5, 1)</li>
+                    <li>(4.0, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0.00</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.03</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.05</minAge>
+                    <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+                    <soundDeath>Pawn_Spelopede_Death</soundDeath>
+                    <soundCall>Pawn_Spelopede_Call</soundCall>
+                    <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>FF_PrimaryRole</li>
+					<li>FF_SecondaryRole</li>
+				</statToAdd>
+				<statValues>
+					<li>FF_Glower</li>
+					<li>FF_Floater</li>
+				</statValues>
+				<statDescriptions>
+					<li>FF_GlowerDesc</li>
+					<li>FF_FloaterDesc</li>
+				</statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/FF_FireflyArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+
+    </ThingDef>
+
+  <!--==================== Firefly PawnKindDef ====================-->
+  
+    <PawnKindDef ParentName="AnimalKindBase">
+
+        <defName>FF_Firefly</defName>
+        <label>firefly</label>
+        <labelPlural>fireflies</labelPlural>
+        <race>FF_Firefly</race>
+        <combatPower>5</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.005</ecoSystemWeight>
+
+        <wildGroupSize>
+			<min>1</min>
+			<max>25</max>
+		</wildGroupSize>
+
+        <lifeStages>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
+                    <drawSize>0.05</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>0.05</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
+                    <drawSize>0.08</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>0.08</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Firefly</texPath>
+                    <drawSize>1.00</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>1.00</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+
+        </lifeStages>
+        
+    </PawnKindDef>
+  
+</Defs>
