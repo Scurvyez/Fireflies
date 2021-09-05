@@ -168,7 +168,7 @@
         <race>FF_Firefly</race>
         <combatPower>5</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
-        <ecoSystemWeight>0.05</ecoSystemWeight>
+        <ecoSystemWeight>0.35</ecoSystemWeight>
 
         <wildGroupSize>
 			<min>1</min>

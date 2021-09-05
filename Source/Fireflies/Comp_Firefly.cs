@@ -24,7 +24,9 @@ namespace Fireflies
 
         public CompProperties_Firefly Props => (CompProperties_Firefly)base.props;
 
-        private Graphic GlowGraphic { get; set; }
+        private Graphic graphicInt;
+        private Graphic GlowGraphic => graphicInt ??= Props.glowGraphicData.Graphic;
+
         private float XGraphPercent => xTick / (float)xGraphTicks;
         private float YGraphPercent => yTick / (float)yGraphTicks;
 
@@ -33,7 +35,7 @@ namespace Fireflies
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            GlowGraphic = Props.glowGraphicData?.Graphic;
+            //GlowGraphic = Props.glowGraphicData?.Graphic;
             xCurve = new SimpleCurve(Props.xPoints);
             yCurve = new SimpleCurve(Props.yPoints);
             xGraphTicks = Props.xMoveDuration;
