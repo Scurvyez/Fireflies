@@ -81,7 +81,7 @@
 			</wildBiomes>
 
             <body>FF_FireflyBody</body>
-            <herdAnimal>false</herdAnimal>
+            <herdAnimal>true</herdAnimal>
             <baseBodySize>0.05</baseBodySize>
             <baseHealthScale>1.0</baseHealthScale>
             <baseHungerRate>0.01</baseHungerRate>
