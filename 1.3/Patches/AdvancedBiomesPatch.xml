@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!--==================== Firefly Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<value>
+
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.10</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.01</Wasteland>
+						<Wetland>0.02</Wetland>	
+
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

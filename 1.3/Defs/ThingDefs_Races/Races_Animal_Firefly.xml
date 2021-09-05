@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--==================== Firefly ThingDef ====================-->
+    <!--==================== Firefly ThingDef ====================-->
 
     <ThingDef ParentName="AnimalThingBase">
 
@@ -12,7 +12,7 @@
 
 		<statBases>
             <MoveSpeed>8.0</MoveSpeed>
-            <MarketValue>50</MarketValue>
+            <MarketValue>15</MarketValue>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
             <ComfyTemperatureMax>100</ComfyTemperatureMax>
             <MeatAmount>0</MeatAmount>
@@ -42,8 +42,8 @@
 				</glowGraphicData>
 				<shortBlinkDuration>8</shortBlinkDuration>
 				<blinkIntervalRange>50~200</blinkIntervalRange>
-				<blinkDuration>250~750</blinkDuration>
-				<chanceToStayOn>0.25</chanceToStayOn>
+				<blinkDuration>250~550</blinkDuration>
+				<chanceToStayOn>0.05</chanceToStayOn>
 				<xMoveDuration>100</xMoveDuration>
 				<yMoveDuration>250</yMoveDuration>
 				<xPoints>
@@ -67,32 +67,32 @@
         <race>
 
             <wildBiomes>
-                <IceSheet>0.10</IceSheet>
-				<SeaIce>0.10</SeaIce>
-                <ColdBog>0.10</ColdBog>
-				<Desert>0.10</Desert>
-                <BorealForest>0.30</BorealForest>
-                <Tundra>0.10</Tundra> 
-				<TemperateForest>0.10</TemperateForest>
-				<TemperateSwamp>0.10</TemperateSwamp>
-				<TropicalRainforest>0.10</TropicalRainforest>
-				<TropicalSwamp>0.10</TropicalSwamp>
-				<AridShrubland>0.10</AridShrubland>
+                <IceSheet>0.20</IceSheet>
+				<SeaIce>0.30</SeaIce>
+                <ColdBog>0.50</ColdBog>
+				<Desert>0.50</Desert>
+                <BorealForest>0.60</BorealForest>
+                <Tundra>0.30</Tundra>
+				<TemperateForest>0.50</TemperateForest>
+				<TemperateSwamp>0.50</TemperateSwamp>
+				<TropicalRainforest>0.60</TropicalRainforest>
+				<TropicalSwamp>0.50</TropicalSwamp>
+				<AridShrubland>0.40</AridShrubland>
 			</wildBiomes>
 
             <body>FF_FireflyBody</body>
-            <herdAnimal>true</herdAnimal>
+            <herdAnimal>false</herdAnimal>
             <baseBodySize>0.05</baseBodySize>
             <baseHealthScale>1.0</baseHealthScale>
             <baseHungerRate>0.01</baseHungerRate>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <wildness>0.99</wildness>
+            <wildness>0.50</wildness>
             <canBePredatorPrey>false</canBePredatorPrey>
             <trainability>None</trainability>
-            <nameOnTameChance>0.01</nameOnTameChance>
+            <nameOnTameChance>0.25</nameOnTameChance>
             <mateMtbHours>100</mateMtbHours>
             <gestationPeriodDays>5</gestationPeriodDays>
-            <lifeExpectancy>0.12</lifeExpectancy>
+            <lifeExpectancy>3.12</lifeExpectancy>
 
             <litterSizeCurve>
                 <points>
@@ -110,11 +110,11 @@
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
-                    <minAge>0.03</minAge>
+                    <minAge>0.42</minAge>
                 </li>
                 <li>
                     <def>AnimalAdult</def>
-                    <minAge>0.05</minAge>
+                    <minAge>1.00</minAge>
                     <!-- <soundWounded>Pawn_Spelopede_Pain</soundWounded>
                     <soundDeath>Pawn_Spelopede_Death</soundDeath>
                     <soundCall>Pawn_Spelopede_Call</soundCall>
@@ -168,7 +168,7 @@
         <race>FF_Firefly</race>
         <combatPower>5</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
-        <ecoSystemWeight>0.005</ecoSystemWeight>
+        <ecoSystemWeight>0.05</ecoSystemWeight>
 
         <wildGroupSize>
 			<min>1</min>

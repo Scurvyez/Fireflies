@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!--==================== Firefly Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.10</AB_MycoticJungle>
+						<AB_OcularForest>0.10</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.010</AB_GallatrossGraveyard>
+						<AB_TarPits>0.03</AB_TarPits>
+                        <AB_PropaneLakes>0.02</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>
