@@ -22,13 +22,13 @@ namespace Fireflies
         private int ticksUntilNextBlink = 0;
         private int curBlinkDuration = 0;
 
-        public CompProperties_Firefly Props => (CompProperties_Firefly)base.props;
+        public CompProperties_Firefly Props => (CompProperties_Firefly) base.props;
 
         private Graphic graphicInt;
         private Graphic GlowGraphic => graphicInt ??= Props.glowGraphicData.Graphic;
 
-        private float XGraphPercent => xTick / (float)xGraphTicks;
-        private float YGraphPercent => yTick / (float)yGraphTicks;
+        private float XGraphPercent => xTick / (float) xGraphTicks;
+        private float YGraphPercent => yTick / (float) yGraphTicks;
 
         public Vector3 FireflyPos => new Vector3(xCurve.Evaluate(XGraphPercent), 0, yCurve.Evaluate(YGraphPercent));
 
@@ -53,11 +53,13 @@ namespace Fireflies
 
             if (curBlinkDuration <= 0)
             {
-                if(ticksUntilNextBlink > 0)
+                if (ticksUntilNextBlink > 0)
                     ticksUntilNextBlink--;
                 if (ticksUntilNextBlink <= 0)
                 {
-                    curBlinkDuration = Rand.Chance(Props.chanceToStayOn) ? Props.blinkDuration.RandomInRange : Props.shortBlinkDuration;
+                    curBlinkDuration = Rand.Chance(Props.chanceToStayOn)
+                        ? Props.blinkDuration.RandomInRange
+                        : Props.shortBlinkDuration;
                     ticksUntilNextBlink = Props.blinkIntervalRange.RandomInRange;
                 }
             }
@@ -67,17 +69,20 @@ namespace Fireflies
             {
                 xTick = 0;
             }
+
             xTick++;
 
             if (yTick > yGraphTicks)
             {
                 yTick = 0;
             }
+
             yTick++;
         }
 
         public override void PostDraw()
         {
+            if (((Firefly) parent).IsSleeping) return;
             if (GlowGraphic != null && curBlinkDuration > 0)
             {
                 var matrix = new Matrix4x4();

@@ -7,7 +7,7 @@
 		<defName>FF_DisabledAnimalToggles</defName>
 		<disabledFromQuestsPawns>			
 			
-		    <li>FF_Firefly</li>
+		    <li>FF_FireflyKind</li>
 			
 		</disabledFromQuestsPawns>
 	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>

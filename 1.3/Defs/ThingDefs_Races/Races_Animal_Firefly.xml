@@ -65,7 +65,7 @@
         </comps>
 
         <race>
-
+			<!--
             <wildBiomes>
                 <IceSheet>0.20</IceSheet>
 				<SeaIce>0.30</SeaIce>
@@ -79,7 +79,7 @@
 				<TropicalSwamp>0.50</TropicalSwamp>
 				<AridShrubland>0.40</AridShrubland>
 			</wildBiomes>
-
+			-->
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.05</baseBodySize>
@@ -162,17 +162,17 @@
   
     <PawnKindDef ParentName="AnimalKindBase">
 
-        <defName>FF_Firefly</defName>
+        <defName>FF_FireflyKind</defName>
         <label>firefly</label>
         <labelPlural>fireflies</labelPlural>
         <race>FF_Firefly</race>
         <combatPower>5</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
-        <ecoSystemWeight>0.35</ecoSystemWeight>
+        <ecoSystemWeight>0.05</ecoSystemWeight>
 
         <wildGroupSize>
-			<min>1</min>
-			<max>50</max>
+			<min>10</min>
+			<max>35</max>
 		</wildGroupSize>
 
         <lifeStages>

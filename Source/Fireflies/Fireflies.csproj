@@ -56,7 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comp_Firefly.cs" />
+    <Compile Include="FFDefOf.cs" />
     <Compile Include="Firefly.cs" />
+    <Compile Include="FireflySettingsDef.cs" />
+    <Compile Include="MapComp_Fireflies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

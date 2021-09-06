@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -18,6 +19,8 @@ namespace Fireflies
             compFirefly = this.TryGetComp<Comp_Firefly>();
         }
 
-        public override Vector3 DrawPos => base.DrawPos + (compFirefly?.FireflyPos ?? Vector3.zero);
+        public bool IsSleeping => this.jobs?.curDriver?.asleep ?? false;
+
+        public override Vector3 DrawPos => base.DrawPos + (IsSleeping ? Vector3.zero : (compFirefly?.FireflyPos ?? Vector3.zero));
     }
 }
