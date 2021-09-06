@@ -40,6 +40,8 @@ namespace Fireflies
             yCurve = new SimpleCurve(Props.yPoints);
             xGraphTicks = Props.xMoveDuration;
             yGraphTicks = Props.yMoveDuration;
+            xTick = Rand.Range(0, xGraphTicks);
+            yTick = Rand.Range(0, yGraphTicks);
         }
 
         public override void CompTick()
