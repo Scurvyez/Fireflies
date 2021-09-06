@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Vanilla Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!--==================== Firefly More Vanilla Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<value>
+
+						<ZBiome_AlpineMeadow>0.30</ZBiome_AlpineMeadow>
+						<ZBiome_CloudForest>0.30</ZBiome_CloudForest>
+						<ZBiome_CoastalDunes>0.15</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.20</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.30</ZBiome_Grasslands>
+                        <ZBiome_Iceberg_NoBeach>0.05</ZBiome_Iceberg_NoBeach>
+                        <ZBiome_Marsh>0.35</ZBiome_Marsh>
+                        <ZBiome_Sandbar_NoBeach>0.20</ZBiome_Sandbar_NoBeach>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

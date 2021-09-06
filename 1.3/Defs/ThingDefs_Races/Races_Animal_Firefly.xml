@@ -20,7 +20,6 @@
         </statBases>
 
         <comps>
-
             <li Class="AnimalBehaviours.CompProperties_Floating">
       
             </li>
@@ -61,25 +60,23 @@
 					<li>(1,   -0.5)</li>
 				</yPoints>
 			</li>
-
         </comps>
 
         <race>
-			<!--
             <wildBiomes>
-                <IceSheet>0.20</IceSheet>
-				<SeaIce>0.30</SeaIce>
-                <ColdBog>0.50</ColdBog>
-				<Desert>0.50</Desert>
-                <BorealForest>0.60</BorealForest>
-                <Tundra>0.30</Tundra>
-				<TemperateForest>0.50</TemperateForest>
-				<TemperateSwamp>0.50</TemperateSwamp>
-				<TropicalRainforest>0.60</TropicalRainforest>
-				<TropicalSwamp>0.50</TropicalSwamp>
-				<AridShrubland>0.40</AridShrubland>
-			</wildBiomes>
-			-->
+                <IceSheet>1</IceSheet>
+                <SeaIce>1</SeaIce>
+                <ColdBog>1</ColdBog>
+                <Desert>1</Desert>
+                <ExtremeDesert>1</ExtremeDesert>
+                <BorealForest>1</BorealForest>
+                <Tundra>1</Tundra>
+                <TemperateForest>1</TemperateForest>
+                <TemperateSwamp>1</TemperateSwamp>
+                <TropicalRainforest>1</TropicalRainforest>
+                <TropicalSwamp>1</TropicalSwamp>
+                <AridShrubland>1</AridShrubland>
+            </wildBiomes>
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.05</baseBodySize>
@@ -127,7 +124,6 @@
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 
             <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
-
         </race>
 
         <tradeTags>
@@ -158,7 +154,7 @@
 
     </ThingDef>
 
-  <!--==================== Firefly PawnKindDef ====================-->
+    <!--==================== Firefly PawnKindDef ====================-->
   
     <PawnKindDef ParentName="AnimalKindBase">
 
@@ -176,7 +172,6 @@
 		</wildGroupSize>
 
         <lifeStages>
-
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
@@ -211,7 +206,6 @@
                     <drawSize>1.00</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
-
         </lifeStages>
         
     </PawnKindDef>

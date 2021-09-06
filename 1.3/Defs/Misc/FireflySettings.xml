@@ -17,7 +17,7 @@
 			<AridShrubland>2</AridShrubland>
 		</maxGroupsByBiome>
 		<spawnHours>18~22</spawnHours>
-		<despawnHours>6~10</despawnHours>
+		<despawnHours>4~8</despawnHours>
 		<despawnInterval>190</despawnInterval>
 	</Fireflies.FireflySettingsDef>
 
