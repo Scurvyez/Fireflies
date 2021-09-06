@@ -63,20 +63,6 @@
         </comps>
 
         <race>
-            <wildBiomes>
-                <IceSheet>1</IceSheet>
-                <SeaIce>1</SeaIce>
-                <ColdBog>1</ColdBog>
-                <Desert>1</Desert>
-                <ExtremeDesert>1</ExtremeDesert>
-                <BorealForest>1</BorealForest>
-                <Tundra>1</Tundra>
-                <TemperateForest>1</TemperateForest>
-                <TemperateSwamp>1</TemperateSwamp>
-                <TropicalRainforest>1</TropicalRainforest>
-                <TropicalSwamp>1</TropicalSwamp>
-                <AridShrubland>1</AridShrubland>
-            </wildBiomes>
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.05</baseBodySize>

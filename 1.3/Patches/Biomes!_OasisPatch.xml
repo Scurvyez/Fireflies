@@ -8,15 +8,16 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success> <!-- TESTING -->
 			<operations>
 
 				<!--==================== Firefly Biomes! Oasis Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<xpath>/Defs/FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
-						<BMT_ChromaticOasis>0.35</BMT_ChromaticOasis>
+						<BMT_ChromaticOasis>3</BMT_ChromaticOasis>
 
 					</value>
 				</li>

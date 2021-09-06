@@ -8,25 +8,26 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success> <!-- TESTING -->
 			<operations>
 
 				<!--==================== Firefly Biomes! Islands Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<xpath>/Defs/FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
-						<BiomesIslands_Atoll>0.35</BiomesIslands_Atoll>
-						<BiomesIslands_BorealIsland>0.25</BiomesIslands_BorealIsland>
-						<BiomesIslands_BorealArchipelago>0.30</BiomesIslands_BorealArchipelago>
-						<BiomesIslands_DesertIsland>0.15</BiomesIslands_DesertIsland>
-						<BiomesIslands_DesertArchipelago>0.20</BiomesIslands_DesertArchipelago>
-                        <BiomesIslands_TemperateIsland>0.30</BiomesIslands_TemperateIsland>
-                        <BiomesIslands_TemperateArchipelago>0.35</BiomesIslands_TemperateArchipelago>
-                        <BiomesIslands_TropicalIsland>0.40</BiomesIslands_TropicalIsland>
-                        <BiomesIslands_TropicalArchipelago>0.45</BiomesIslands_TropicalArchipelago>
-                        <BiomesIslands_TundraIsland>0.10</BiomesIslands_TundraIsland>
-                        <BiomesIslands_TundraArchipelago>0.15</BiomesIslands_TundraArchipelago>
+						<BiomesIslands_Atoll>3</BiomesIslands_Atoll>
+						<BiomesIslands_BorealIsland>2</BiomesIslands_BorealIsland>
+						<BiomesIslands_BorealArchipelago>2</BiomesIslands_BorealArchipelago>
+						<BiomesIslands_DesertIsland>1</BiomesIslands_DesertIsland>
+						<BiomesIslands_DesertArchipelago>1</BiomesIslands_DesertArchipelago>
+                        <BiomesIslands_TemperateIsland>3</BiomesIslands_TemperateIsland>
+                        <BiomesIslands_TemperateArchipelago>3</BiomesIslands_TemperateArchipelago>
+                        <BiomesIslands_TropicalIsland>3</BiomesIslands_TropicalIsland>
+                        <BiomesIslands_TropicalArchipelago>3</BiomesIslands_TropicalArchipelago>
+                        <BiomesIslands_TundraIsland>1</BiomesIslands_TundraIsland>
+                        <BiomesIslands_TundraArchipelago>2</BiomesIslands_TundraArchipelago>
 
 					</value>
 				</li>

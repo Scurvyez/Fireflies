@@ -8,24 +8,25 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
+			<success>Always</success> <!-- TESTING -->
 			<operations>
 
 				<!--==================== Firefly Alpha Biomes Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="FF_Firefly"]/race/wildBiomes</xpath>
+					<xpath>/Defs/FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
-						<AB_FeraliskInfestedJungle>0.20</AB_FeraliskInfestedJungle>
-						<AB_GallatrossGraveyard>0.40</AB_GallatrossGraveyard>
-						<AB_GelatinousSuperorganism>0.10</AB_GelatinousSuperorganism>
-						<AB_MechanoidIntrusion>0.05</AB_MechanoidIntrusion>
-						<AB_MycoticJungle>0.15</AB_MycoticJungle>
-						<AB_OcularForest>0.20</AB_OcularForest>
-						<AB_PyroclasticConflagration>0.02</AB_PyroclasticConflagration>
-                        <AB_PropaneLakes>0.02</AB_PropaneLakes>
-						<AB_RockyCrags>0.30</AB_RockyCrags>
-						<AB_TarPits>0.05</AB_TarPits>
+						<AB_FeraliskInfestedJungle>2</AB_FeraliskInfestedJungle>
+						<AB_GallatrossGraveyard>3</AB_GallatrossGraveyard>
+						<AB_GelatinousSuperorganism>1</AB_GelatinousSuperorganism>
+						<AB_MechanoidIntrusion>1</AB_MechanoidIntrusion>
+						<AB_MycoticJungle>2</AB_MycoticJungle>
+						<AB_OcularForest>3</AB_OcularForest>
+						<AB_PyroclasticConflagration>1</AB_PyroclasticConflagration>
+                        <AB_PropaneLakes>1</AB_PropaneLakes>
+						<AB_RockyCrags>1</AB_RockyCrags>
+						<AB_TarPits>1</AB_TarPits>
 
 					</value>
 				</li>
