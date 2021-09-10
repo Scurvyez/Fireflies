@@ -15,7 +15,7 @@
             <MarketValue>15</MarketValue>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
             <ComfyTemperatureMax>100</ComfyTemperatureMax>
-            <MeatAmount>0</MeatAmount>
+            <MeatAmount>1</MeatAmount>
             <Flammability>0.0</Flammability>
         </statBases>
 
@@ -65,10 +65,11 @@
         <race>
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
-            <baseBodySize>0.05</baseBodySize>
-            <baseHealthScale>1.0</baseHealthScale>
+            <baseBodySize>0.001</baseBodySize>
+            <baseHealthScale>0.09</baseHealthScale>
             <baseHungerRate>0.01</baseHungerRate>
             <foodType>OmnivoreRoughAnimal</foodType>
+            <meatLabel>insect meat</meatLabel>
             <wildness>0.50</wildness>
             <canBePredatorPrey>false</canBePredatorPrey>
             <trainability>None</trainability>

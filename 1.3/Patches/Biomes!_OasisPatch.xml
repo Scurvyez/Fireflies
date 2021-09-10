@@ -8,7 +8,7 @@
 		</mods>
 
 		<match Class="PatchOperationSequence">
-			<success>Always</success> <!-- TESTING -->
+			<!-- <success>Always</success> --> <!-- TESTING -->
 			<operations>
 
 				<!--==================== Firefly Biomes! Oasis Spawning ====================-->
