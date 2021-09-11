@@ -17,10 +17,10 @@
 		<description>A decorative jar of beautiful, lively, fireflies. A great way for colonists to become completely lost in the moment.</description>
 
 		<graphicData>
-			<texPath>Things/Building/FF_Firefly_Jar/FF_Firefly_Jar</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FF_Firefly_Jar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>(1.0,1.0)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 
 		<costList>
@@ -53,6 +53,7 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,235,0,0)</glowColor>
+				<overlightRadius>3</overlightRadius>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>0.5</heatPerSecond>
