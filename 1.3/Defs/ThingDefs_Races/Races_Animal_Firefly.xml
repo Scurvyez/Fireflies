@@ -24,6 +24,23 @@
       
             </li>
 
+            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+
+				<customThingToEat>
+					
+                    <li>CorpsesHumanlike</li>
+                    <li>CorpsesAnimal</li>
+                    <li>CorpsesInsect</li>
+
+				</customThingToEat>
+				<nutrition>1</nutrition>
+				<digThingIfMapEmpty>false</digThingIfMapEmpty>
+				<fullyDestroyThing>false</fullyDestroyThing>
+                <percentageOfDestruction>0.05</percentageOfDestruction>
+				<advanceLifeStage>false</advanceLifeStage>
+				<needsWater>false</needsWater>
+			</li>
+
             <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
                 <resourceAmount>1</resourceAmount>
                 <dropChance>0.85</dropChance>
@@ -63,14 +80,17 @@
         </comps>
 
         <race>
+            <thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
             <body>FF_FireflyBody</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.001</baseBodySize>
-            <baseHealthScale>0.09</baseHealthScale>
+            <baseHealthScale>0.10</baseHealthScale>
             <baseHungerRate>0.01</baseHungerRate>
             <foodType>OmnivoreRoughAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
             <meatLabel>insect meat</meatLabel>
             <wildness>0.50</wildness>
+            <bloodDef>FF_FireflyBlood</bloodDef>
             <canBePredatorPrey>false</canBePredatorPrey>
             <trainability>None</trainability>
             <nameOnTameChance>0.25</nameOnTameChance>

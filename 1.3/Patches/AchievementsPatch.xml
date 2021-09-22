@@ -16,18 +16,18 @@
 						<!--==================== Fireflies Tab Creation ====================-->
 
 						<AchievementsExpanded.AchievementTabDef>
-							<defName>FF_Achievements</defName>
+							<defName>Fireflies_Achievements</defName>
 							<label>Fireflies</label>
 						</AchievementsExpanded.AchievementTabDef>
 
-						<AchievementsExpanded.AchievementDef Name="FF_AchievementParent" Abstract="true">					
-							<bgtexPath>Achievements/FF_AchievementBackground</bgtexPath>
-							<tab>FF_Achievements</tab>
+						<AchievementsExpanded.AchievementDef Name="Fireflies_AchievementParent" Abstract="true">					
+							<bgtexPath>Achievements/Fireflies_AchievementBackground</bgtexPath>
+							<tab>Fireflies_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
 
 						<!--==================== Tame a Firefly ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly</defName>
 							<label>A firefly has joined the colony!</label>
 							<description>Tame a firefly.</description>
@@ -47,7 +47,7 @@
 
 						<!--==================== Tame 2 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_2</defName>
 							<label>A second firefly has joined the colony.</label>
 							<description>Tame another firefly.</description>
@@ -67,7 +67,7 @@
 
 						<!--==================== Tame 3 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_3</defName>
 							<label>A third firefly has joined the colony...</label>
 							<description>Tame yet another firefly.</description>
@@ -87,7 +87,7 @@
 
 						<!--==================== Tame 5 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_5</defName>
 							<label>Five of them? Hmm...</label>
 							<description>Tame five fireflies.</description>
@@ -107,7 +107,7 @@
 
 						<!--==================== Tame 8 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_8</defName>
 							<label>Eight? This is getting a little ridiculous.</label>
 							<description>Tame eight fireflies.</description>
@@ -127,7 +127,7 @@
 
 						<!--==================== Tame 13 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_13</defName>
 							<label>An ecologists dozen.</label>
 							<description>Tame thirteen fireflies.</description>
@@ -147,7 +147,7 @@
 
 						<!--==================== Tame 21 Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Tame_Firefly_21</defName>
 							<label>Alright, alright, is this enough light?</label>
 							<description>Tame twenty-one fireflies.</description>
@@ -167,7 +167,7 @@
 
 						<!--==================== Build a Jar of Fireflies ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Build_Firefly_Jar</defName>
 							<label>Cozy, heartwarming, bright, what more do you need?</label>
 							<description>Build a jar of fireflies.</description>
@@ -183,7 +183,7 @@
 
 						<!--==================== Collect 90 Firefly Essence ====================-->
 
-						<AchievementsExpanded.AchievementDef ParentName="FF_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
 							<defName>FF_Achievement_Collect_Firefly_Essence</defName>
 							<label>I almost want to... eat it...</label>
 							<description>Collect 90 firefly essence.</description>
