@@ -39,6 +39,18 @@ namespace Fireflies
             }
         }
 
+        public void DespawnGroupNow()
+        {
+            if (!ShouldBeGone)
+            {
+                for (int i = 0; i < fireflies.Count; i++)
+                {
+                    fireflies[i]?.DeSpawn();
+                }
+                fireflies.Clear();
+            }
+        }
+
         public void StartDisappearing()
         {
             disappearingInt = true;
@@ -69,6 +81,18 @@ namespace Fireflies
 
         public MapComp_Fireflies(Map map) : base(map)
         {
+        }
+
+        public override void FinalizeInit()
+        {
+            // Don't bother ticking a component that does nothing
+            if (Settings.MaxGroupCount(map.Biome) <= 0)
+            {
+                // Safety measure for between-version folks
+                curGroup?.DespawnGroupNow();
+
+                map.components.Remove(this);
+            }
         }
 
         public override void ExposeData()
