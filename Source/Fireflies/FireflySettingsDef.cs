@@ -17,9 +17,22 @@ namespace Fireflies
 
         public static FireflySettingsDef Def => FFDefOf.FireflySettings;
 
+        protected Dictionary<string, int> _maxGroupsByBiomeName = new Dictionary<string, int>();
+
+        public IReadOnlyDictionary<string, int> MaxGroupsByBiomeName
+        {
+            get
+            {
+                if (_maxGroupsByBiomeName.NullOrEmpty())
+                    _maxGroupsByBiomeName = maxGroupsByBiome.ToDictionary(abr => abr.biome.defName, abr => UnityEngine.Mathf.FloorToInt(abr.commonality));
+
+                return _maxGroupsByBiomeName as IReadOnlyDictionary<string, int>;
+            }
+        }
+
         public int MaxGroupCount(BiomeDef forBiome)
         {
-            if (maxGroupsByBiome.NullOrEmpty()) return 0;
+            if (maxGroupsByBiome.NullOrEmpty() || !MaxGroupsByBiomeName.ContainsKey(forBiome.defName)) return 0;
             return (int)maxGroupsByBiome.Find(b => b.biome == forBiome).commonality;
         }
     }
