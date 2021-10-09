@@ -33,7 +33,9 @@ namespace Fireflies
             {
                 IntVec3 loc2 = CellFinder.RandomClosewalkCellNear(c, map, radius, null);
                 var ff = (Firefly) GenSpawn.Spawn(PawnGenerator.GeneratePawn(pawnKind, null), loc2, map, WipeMode.Vanish);
-                fireflies.Add(ff);
+                
+                if (ff != null)
+                    fireflies.Add(ff);
             }
         }
 
@@ -48,7 +50,7 @@ namespace Fireflies
             if (Find.TickManager.TicksGame % FireflySettingsDef.Def.despawnInterval == 0)
             {
                 var ff = fireflies.RandomElement();
-                if (ff.Spawned)
+                if (ff != null && ff.Spawned)
                 {
                     ff.DeSpawn();
                 }
