@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--firefly body-->
+    <FF_Body.label>[translation goes here]</FF_Body.label>
+
+	<!--antennae-->
+	<FF_Antennae.label>[translation goes here]</FF_Antennae.label>
+
+	<!--compound eye-->
+	<FF_Eye.label>[translation goes here]</FF_Eye.label>
+
+	<!--red plate-->
+	<FF_RedPlate.label>[translation goes here]</FF_RedPlate.label>
+
+	<!--thorax-->
+	<FF_Thorax.label>[translation goes here]</FF_Thorax.label>
+
+	<!--scutellum-->
+	<FF_Scutellum.label>[translation goes here]</FF_Scutellum.label>
+
+	<!--elytra-->
+	<FF_Elytra.label>[translation goes here]</FF_Elytra.label>
+
+	<!--wing-->
+	<FF_Wing.label>[translation goes here]</FF_Wing.label>
+
+	<!--abdomen-->
+	<FF_Abdomen.label>[translation goes here]</FF_Abdomen.label>
+
+	<!--reflector cells-->
+	<FF_ReflectorCells.label>[translation goes here]</FF_ReflectorCells.label>
+
+	<!--light cells-->
+	<FF_LightCells.label>[translation goes here]</FF_LightCells.label>
+
+	<!--transparent exoskeleton-->
+	<FF_TransparentExoskeleton.label>[translation goes here]</FF_TransparentExoskeleton.label>
+
+	<!--leg-->
+	<FF_Leg.label>[translation goes here]</FF_Leg.label>
+
+</LanguageData>

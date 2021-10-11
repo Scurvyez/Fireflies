@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--firefly jar-->
+	<FF_Firefly_Jar.label>[translation goes here]</FF_Firefly_Jar.label>
+	
+	<!--A decorative jar of beautiful, lively, fireflies.
+	A great way for colonists to become completely lost in the moment.-->
+	<FF_Firefly_Jar.description>[translation goes here]</FF_Firefly_Jar.description>
+
+</LanguageData>

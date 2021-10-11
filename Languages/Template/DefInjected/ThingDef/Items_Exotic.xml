@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--firefly essence-->
+    <FF_Firefly_Essence.label>[translation goes here]</FF_Firefly_Essence.label>
+
+    <!--The essence of a recently deceased firefly. Use it to create a beautiful
+    firefly-filled jar for your colonists to enjoy during those stressful times on The Rim.-->
+    <FF_Firefly_Essence.description>[translation goes here]</FF_Firefly_Essence.description>
+
+</LanguageData>
