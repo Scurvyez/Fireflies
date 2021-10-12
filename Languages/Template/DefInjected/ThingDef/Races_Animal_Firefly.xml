@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--firefly-->
+    <FF_Firefly.label>[translation goes here]</FF_Firefly.label>
+
+    <!--Fireflies are soft-bodied beetles with the power of flight and bioluminescence.
+    They live incredibly short, yet vibrant, lives among the scattered planets of The Rim.\n\n
+    They are often found in small to large groups and are non-threatening.-->
+    <FF_Firefly.description>[translation goes here]</FF_Firefly.description>
+
+    <!--insect meat-->
+    <FF_Firefly.race.meatLabel>[translation goes here]</FF_Firefly.race.meatLabel>
+
+</LanguageData>

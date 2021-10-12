@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--firefly body-->
+	<FF_FireflyBody.label>[translation goes here]</FF_FireflyBody.label>
+
+	<!--right antennae-->
+	<FF_FireflyBody.corePart.parts.0.parts.0.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.0.parts.0.customLabel>
+
+	<!--left antennae-->
+	<FF_FireflyBody.corePart.parts.0.parts.1.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.0.parts.1.customLabel>
+
+	<!--right compound eye-->
+	<FF_FireflyBody.corePart.parts.0.parts.2.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.0.parts.2.customLabel>
+
+	<!--left compound eye-->
+	<FF_FireflyBody.corePart.parts.0.parts.3.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.0.parts.3.customLabel>
+
+	<!--right elytra-->
+	<FF_FireflyBody.corePart.parts.3.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.3.customLabel>
+
+	<!--right wing-->
+	<FF_FireflyBody.corePart.parts.4.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.4.customLabel>
+
+	<!--left wing-->
+	<FF_FireflyBody.corePart.parts.5.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.5.customLabel>
+
+	<!--left elytra-->
+	<FF_FireflyBody.corePart.parts.6.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.6.customLabel>
+
+	<!--right foreleg-->
+	<FF_FireflyBody.corePart.parts.8.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.8.customLabel>
+
+	<!--left foreleg-->
+	<FF_FireflyBody.corePart.parts.9.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.9.customLabel>
+
+	<!--right middle leg-->
+	<FF_FireflyBody.corePart.parts.10.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.10.customLabel>
+
+	<!--left middle leg-->
+	<FF_FireflyBody.corePart.parts.11.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.11.customLabel>
+
+	<!--right hind leg-->
+	<FF_FireflyBody.corePart.parts.12.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.12.customLabel>
+
+	<!--left hind leg-->
+	<FF_FireflyBody.corePart.parts.13.customLabel>[translation goes here]</FF_FireflyBody.corePart.parts.13.customLabel>
+
+</LanguageData>
