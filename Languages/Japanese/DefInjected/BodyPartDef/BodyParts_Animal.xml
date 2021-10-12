@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--firefly body-->
+    <FF_Body.label>ホタルの体</FF_Body.label>
+
+	<!--antennae-->
+	<FF_Antennae.label>触角</FF_Antennae.label>
+
+	<!--compound eye-->
+	<FF_Eye.label>複眼</FF_Eye.label>
+
+	<!--red plate-->
+	<FF_RedPlate.label>前胸</FF_RedPlate.label>
+
+	<!--thorax-->
+	<FF_Thorax.label>胸部</FF_Thorax.label>
+
+	<!--scutellum-->
+	<FF_Scutellum.label>小鱗片</FF_Scutellum.label>
+
+	<!--elytra-->
+	<FF_Elytra.label>鞘翅</FF_Elytra.label>
+
+	<!--wing-->
+	<FF_Wing.label>羽</FF_Wing.label>
+
+	<!--abdomen-->
+	<FF_Abdomen.label>尾部</FF_Abdomen.label>
+
+	<!--reflector cells-->
+	<FF_ReflectorCells.label>反射細胞</FF_ReflectorCells.label>
+
+	<!--light cells-->
+	<FF_LightCells.label>発光細胞</FF_LightCells.label>
+
+	<!--transparent exoskeleton-->
+	<FF_TransparentExoskeleton.label>透明の外骨格</FF_TransparentExoskeleton.label>
+
+	<!--leg-->
+	<FF_Leg.label>脚</FF_Leg.label>
+
+</LanguageData>

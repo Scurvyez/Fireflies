@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--firefly body-->
+	<FF_FireflyBody.label>ホタルの体</FF_FireflyBody.label>
+
+	<!--right antennae-->
+	<FF_FireflyBody.corePart.parts.0.parts.0.customLabel>右の触角</FF_FireflyBody.corePart.parts.0.parts.0.customLabel>
+
+	<!--left antennae-->
+	<FF_FireflyBody.corePart.parts.0.parts.1.customLabel>左の触角</FF_FireflyBody.corePart.parts.0.parts.1.customLabel>
+
+	<!--right compound eye-->
+	<FF_FireflyBody.corePart.parts.0.parts.2.customLabel>右の複眼</FF_FireflyBody.corePart.parts.0.parts.2.customLabel>
+
+	<!--left compound eye-->
+	<FF_FireflyBody.corePart.parts.0.parts.3.customLabel>左の複眼</FF_FireflyBody.corePart.parts.0.parts.3.customLabel>
+
+	<!--right elytra-->
+	<FF_FireflyBody.corePart.parts.3.customLabel>右の鞘翅</FF_FireflyBody.corePart.parts.3.customLabel>
+
+	<!--right wing-->
+	<FF_FireflyBody.corePart.parts.4.customLabel>右の羽</FF_FireflyBody.corePart.parts.4.customLabel>
+
+	<!--left wing-->
+	<FF_FireflyBody.corePart.parts.5.customLabel>左の羽</FF_FireflyBody.corePart.parts.5.customLabel>
+
+	<!--left elytra-->
+	<FF_FireflyBody.corePart.parts.6.customLabel>左の鞘翅</FF_FireflyBody.corePart.parts.6.customLabel>
+
+	<!--right foreleg-->
+	<FF_FireflyBody.corePart.parts.8.customLabel>右前脚</FF_FireflyBody.corePart.parts.8.customLabel>
+
+	<!--left foreleg-->
+	<FF_FireflyBody.corePart.parts.9.customLabel>左前脚</FF_FireflyBody.corePart.parts.9.customLabel>
+
+	<!--right middle leg-->
+	<FF_FireflyBody.corePart.parts.10.customLabel>右中脚</FF_FireflyBody.corePart.parts.10.customLabel>
+
+	<!--left middle leg-->
+	<FF_FireflyBody.corePart.parts.11.customLabel>左中脚</FF_FireflyBody.corePart.parts.11.customLabel>
+
+	<!--right hind leg-->
+	<FF_FireflyBody.corePart.parts.12.customLabel>右後脚</FF_FireflyBody.corePart.parts.12.customLabel>
+
+	<!--left hind leg-->
+	<FF_FireflyBody.corePart.parts.13.customLabel>左後脚</FF_FireflyBody.corePart.parts.13.customLabel>
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--firefly jar-->
+	<FF_Firefly_Jar.label>ホタルのビン</FF_Firefly_Jar.label>
+	
+	<!--A decorative jar of beautiful, lively, fireflies.
+	A great way for colonists to become completely lost in the moment.-->
+	<FF_Firefly_Jar.description>飾りにもなる美しく活発的なホタルが入ったビン. 入植者に心穏やかなひとときを提供するでしょう.</FF_Firefly_Jar.description>
+
+</LanguageData>
