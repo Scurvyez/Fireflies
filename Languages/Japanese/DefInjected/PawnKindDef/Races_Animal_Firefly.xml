@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--firefly-->
+    <FF_FireflyKind.label>ホタル</FF_FireflyKind.label>
+    
+    <!--fireflies-->
+    <FF_FireflyKind.labelPlural>ホタルの群れ</FF_FireflyKind.labelPlural>
+    
+</LanguageData>
