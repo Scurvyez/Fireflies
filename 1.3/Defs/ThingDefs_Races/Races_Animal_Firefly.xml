@@ -24,14 +24,21 @@
       
             </li>
 
-            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+            <comps>
+                <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+                    <reproductionIntervalDays>10</reproductionIntervalDays>
+                    <customString>Spawning in: </customString>
+                    <isGreenGoo>true</isGreenGoo>
+                    <GreenGooLimit>100</GreenGooLimit>
+                    <GreenGooTarget>FF_FireflyKind</GreenGooTarget>
+                </li>		
+            </comps>
 
+            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
 				<customThingToEat>
-					
                     <li>CorpsesHumanlike</li>
                     <li>CorpsesAnimal</li>
                     <li>CorpsesInsect</li>
-
 				</customThingToEat>
 				<nutrition>1</nutrition>
 				<digThingIfMapEmpty>false</digThingIfMapEmpty>
