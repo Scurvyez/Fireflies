@@ -93,7 +93,7 @@
             <baseBodySize>0.001</baseBodySize>
             <baseHealthScale>0.10</baseHealthScale>
             <baseHungerRate>0.01</baseHungerRate>
-            <foodType>OmnivoreRoughAnimal</foodType>
+            <foodType>OmnivoreRoughAnimal, Corpse, Meat</foodType>
             <useMeatFrom>Megaspider</useMeatFrom>
             <meatLabel>insect meat</meatLabel>
             <wildness>0.50</wildness>
